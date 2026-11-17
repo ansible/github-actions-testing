@@ -22,5 +22,5 @@ jobs:
       - name: Install ansible-core
         run: pip install git+https://github.com/ansible/ansible.git@devel
       - name: Test GHA support
-        run: ansible-test integration -v
+        run: ansible-test integration -v --remote-stage dev
         working-directory: ansible_collections/ansible/core
